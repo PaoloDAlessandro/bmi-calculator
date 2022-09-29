@@ -1,0 +1,12 @@
+<ul *ngFor="let persona of persone">
+    <li><b *ngIf="persona.nome == 'Giorgia'"></b>{{persona.nome}}</li>
+    <li>{{persona.cognome}}</li>
+    <li>{{persona.eta}}</li>
+    <li>{{persona.nazionalita}}</li>
+    <li>{{persona.altezza}}</li>
+</ul>
+
+<input type="text" [(ngModel)] = 'messaggio' [value]="messaggio">
+<input type="text" [(ngModel)] = 'messaggio' [value]="messaggio">
+
+<h1>{{messaggio}}</h1>
